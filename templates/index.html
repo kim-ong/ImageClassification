@@ -1,3 +1,18 @@
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "ea4d4f6f-6325-4ae2-bc57-b08da80d4167", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "d0e463af-f23c-4198-8c1f-23e8155dc3bb", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
 <!doctype html> <html> <head>
     <title>Classify your Image!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
